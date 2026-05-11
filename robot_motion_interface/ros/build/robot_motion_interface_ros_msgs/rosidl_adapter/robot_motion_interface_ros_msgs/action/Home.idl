@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from robot_motion_interface_ros_msgs/action/Home.action
+// generated code does not contain a copyright notice
+
+
+module robot_motion_interface_ros_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "===== Goal =====" "\n"
+      "Empty")
+    struct Home_Goal {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "===== Result =====")
+    struct Home_Result {
+      boolean success;
+    };
+    struct Home_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

@@ -1,0 +1,23 @@
+[0.500s] Invoking command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros': AMENT_PREFIX_PATH=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs:/opt/openrobots LD_LIBRARY_PATH=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/opt/openrobots/lib PS1=(venv-dex) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros/prefix_override:/opt/venv-dex/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/lib/python3.12/site-packages:/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.10/site-packages VIRTUAL_ENV_PROMPT=(venv-dex) /opt/venv-dex/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros/build --no-deps symlink_data
+[0.700s] running develop
+[0.789s] running egg_info
+[0.798s] creating robot_motion_interface_ros.egg-info
+[0.799s] writing robot_motion_interface_ros.egg-info/PKG-INFO
+[0.799s] writing dependency_links to robot_motion_interface_ros.egg-info/dependency_links.txt
+[0.799s] writing entry points to robot_motion_interface_ros.egg-info/entry_points.txt
+[0.799s] writing requirements to robot_motion_interface_ros.egg-info/requires.txt
+[0.799s] writing top-level names to robot_motion_interface_ros.egg-info/top_level.txt
+[0.799s] writing manifest file 'robot_motion_interface_ros.egg-info/SOURCES.txt'
+[0.852s] listing git files failed - pretending there aren't any
+[0.855s] reading manifest file 'robot_motion_interface_ros.egg-info/SOURCES.txt'
+[0.856s] writing manifest file 'robot_motion_interface_ros.egg-info/SOURCES.txt'
+[0.870s] running build_ext
+[0.870s] Creating /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/lib/python3.12/site-packages/robot-motion-interface-ros.egg-link (link to .)
+[0.870s] Installing interface script to /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/lib/robot_motion_interface_ros
+[0.870s] 
+[0.870s] Installed /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros
+[0.870s] running symlink_data
+[0.870s] creating /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/ament_index/resource_index/packages
+[0.871s] symbolically linking /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros/resource/robot_motion_interface_ros -> /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/ament_index/resource_index/packages
+[0.871s] symbolically linking /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros/package.xml -> /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/robot_motion_interface_ros
+[0.891s] Invoked command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros' returned '0': AMENT_PREFIX_PATH=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs:/opt/openrobots LD_LIBRARY_PATH=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/opt/openrobots/lib PS1=(venv-dex) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros/prefix_override:/opt/venv-dex/lib/python3.12/site-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/lib/python3.12/site-packages:/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.10/site-packages VIRTUAL_ENV_PROMPT=(venv-dex) /opt/venv-dex/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros/build --no-deps symlink_data

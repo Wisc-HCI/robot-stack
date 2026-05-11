@@ -1,0 +1,58 @@
+[0.007s] Invoking command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy PS1=(venv-dex) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv-dex) /usr/bin/cmake /workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs
+[0.097s] -- The C compiler identification is GNU 13.3.0
+[0.177s] -- The CXX compiler identification is GNU 13.3.0
+[0.196s] -- Detecting C compiler ABI info
+[0.288s] -- Detecting C compiler ABI info - done
+[0.295s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.296s] -- Detecting C compile features
+[0.296s] -- Detecting C compile features - done
+[0.303s] -- Detecting CXX compiler ABI info
+[0.383s] -- Detecting CXX compiler ABI info - done
+[0.389s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.390s] -- Detecting CXX compile features
+[0.390s] -- Detecting CXX compile features - done
+[0.392s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.642s] -- Found Python3: /opt/venv-dex/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.712s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.735s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.739s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.769s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.796s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.799s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.838s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.240s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[1.240s]   execute_process(/opt/venv-dex/bin/python3 -m rosidl_adapter --package-name
+[1.240s]   robot_motion_interface_ros_msgs --arguments-file
+[1.240s]   /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs/rosidl_adapter__arguments__robot_motion_interface_ros_msgs.json
+[1.240s]   --output-dir
+[1.240s]   /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs/rosidl_adapter/robot_motion_interface_ros_msgs
+[1.240s]   --output-file
+[1.240s]   /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs/rosidl_adapter/robot_motion_interface_ros_msgs.idls)
+[1.240s]   returned error code 1:
+[1.240s] 
+[1.240s]   Traceback (most recent call last):
+[1.240s] 
+[1.241s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[1.241s]     File "<frozen runpy>", line 88, in _run_code
+[1.241s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.241s]       sys.exit(main())
+[1.241s]                ^^^^^^
+[1.241s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.241s]       abs_idl_file = convert_to_idl(
+[1.241s]                      ^^^^^^^^^^^^^^^
+[1.241s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 28, in convert_to_idl
+[1.241s]       from rosidl_adapter.action import convert_action_to_idl
+[1.241s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/action/__init__.py", line 16, in <module>
+[1.241s]       from rosidl_adapter.resource import expand_template
+[1.241s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/resource/__init__.py", line 19, in <module>
+[1.241s]       import em
+[1.241s] 
+[1.241s]   ModuleNotFoundError: No module named 'em'
+[1.241s] 
+[1.241s] Call Stack (most recent call first):
+[1.241s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[1.241s]   CMakeLists.txt:17 (rosidl_generate_interfaces)
+[1.241s] 
+[1.241s] [0m
+[1.241s] -- Configuring incomplete, errors occurred!
+[1.245s] Invoked command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy PS1=(venv-dex) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv-dex) /usr/bin/cmake /workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs

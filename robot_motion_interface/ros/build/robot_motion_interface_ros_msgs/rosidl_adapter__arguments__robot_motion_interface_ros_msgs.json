@@ -1,0 +1,10 @@
+{
+  "package_name": "robot_motion_interface_ros_msgs",
+  "non_idl_tuples": [
+    "/workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs:action/SetCartesianPose.action",
+    "/workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs:action/Home.action",
+    "/workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs:action/SetJointPositions.action",
+    "/workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs:msg/ObjectPose.msg",
+    "/workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs:msg/ObjectPoses.msg"
+  ]
+}

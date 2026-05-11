@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: robot-motion-interface-ros
+Version: 0.0.0
+Summary: ROS2 Wrapper for robot_motion_interface
+Maintainer: Mya Schroder
+Maintainer-email: mcschroder@wisc.edu
+License: TODO: License declaration

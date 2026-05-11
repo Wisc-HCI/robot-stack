@@ -1,0 +1,1 @@
+/workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs/msg/ObjectPose.msg

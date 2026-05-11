@@ -1,0 +1,330 @@
+[0.007s] Invoking command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs
+[0.077s] -- The C compiler identification is GNU 13.3.0
+[0.126s] -- The CXX compiler identification is GNU 13.3.0
+[0.140s] -- Detecting C compiler ABI info
+[0.214s] -- Detecting C compiler ABI info - done
+[0.223s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.223s] -- Detecting C compile features
+[0.223s] -- Detecting C compile features - done
+[0.233s] -- Detecting CXX compiler ABI info
+[0.319s] -- Detecting CXX compiler ABI info - done
+[0.327s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.327s] -- Detecting CXX compile features
+[0.327s] -- Detecting CXX compile features - done
+[0.330s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.588s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.658s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.683s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.688s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.725s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.760s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.763s] -- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.801s] -- Found sensor_msgs: 5.3.7 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.892s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.757s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.953s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.955s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[4.207s] -- Found PythonExtra: /usr/bin/python3  
+[4.849s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[4.996s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[5.000s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[5.017s] -- Added test 'lint_cmake' to check CMake code style
+[5.018s] -- Added test 'xmllint' to check XML markup files
+[5.021s] -- Configuring done (5.0s)
+[5.059s] -- Generating done (0.0s)
+[5.067s] -- Build files have been written to: /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs
+[5.074s] Invoked command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs
+[5.075s] Invoking command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs -- -j16 -l16
+[5.114s] [  1%] Built target robot_motion_interface_ros_msgs__rosidl_generator_type_description
+[5.114s] [  2%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[5.123s] [  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.123s] [  4%] Built target ament_cmake_python_symlink_robot_motion_interface_ros_msgs
+[5.129s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[5.271s] running egg_info
+[5.282s] writing robot_motion_interface_ros_msgs.egg-info/PKG-INFO
+[5.282s] writing dependency_links to robot_motion_interface_ros_msgs.egg-info/dependency_links.txt
+[5.282s] writing top-level names to robot_motion_interface_ros_msgs.egg-info/top_level.txt
+[5.309s] reading manifest file 'robot_motion_interface_ros_msgs.egg-info/SOURCES.txt'
+[5.309s] writing manifest file 'robot_motion_interface_ros_msgs.egg-info/SOURCES.txt'
+[5.330s] [  5%] Built target ament_cmake_python_build_robot_motion_interface_ros_msgs_egg
+[5.408s] [  5%] Built target robot_motion_interface_ros_msgs__rs
+[5.747s] [  5%] Built target robot_motion_interface_ros_msgs__cpp
+[5.861s] [  6%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/action/detail/home__type_support.c.o[0m
+[5.861s] [  8%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__functions.c.o[0m
+[5.861s] [  9%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/action/detail/home__description.c.o[0m
+[5.861s] [ 12%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__description.c.o[0m
+[5.861s] [ 13%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__type_support.c.o[0m
+[5.865s] [ 14%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__functions.c.o[0m
+[5.865s] [ 12%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__description.c.o[0m
+[5.866s] [ 17%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/msg/detail/object_poses__description.c.o[0m
+[5.866s] [ 17%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__type_support.c.o[0m
+[5.866s] [ 18%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/msg/detail/object_poses__functions.c.o[0m
+[5.866s] [ 21%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/msg/detail/object_poses__type_support.c.o[0m
+[5.866s] [ 21%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/msg/detail/object_pose__type_support.c.o[0m
+[5.866s] [ 22%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/msg/detail/object_pose__description.c.o[0m
+[5.871s] [ 24%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/action/detail/home__functions.c.o[0m
+[5.871s] [ 25%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/robot_motion_interface_ros_msgs/msg/detail/object_pose__functions.c.o[0m
+[6.016s] [ 26%] [32m[1mLinking C shared library librobot_motion_interface_ros_msgs__rosidl_generator_c.so[0m
+[6.058s] [ 26%] Built target robot_motion_interface_ros_msgs__rosidl_generator_c
+[6.081s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[6.082s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[6.083s] [ 30%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.083s] [ 32%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.087s] [ 33%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[6.093s] [ 34%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.469s] [ 36%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_motion_interface_ros_msgs/action/home__type_support.cpp.o[0m
+[6.471s] [ 37%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_motion_interface_ros_msgs/msg/object_pose__type_support.cpp.o[0m
+[6.472s] [ 38%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_motion_interface_ros_msgs/action/set_joint_positions__type_support.cpp.o[0m
+[6.474s] [ 41%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_motion_interface_ros_msgs/msg/object_poses__type_support.cpp.o[0m
+[6.474s] [ 41%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_motion_interface_ros_msgs/action/set_cartesian_pose__type_support.cpp.o[0m
+[6.476s] [ 42%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_motion_interface_ros_msgs/msg/object_pose__type_support.cpp.o[0m
+[6.476s] [ 44%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_motion_interface_ros_msgs/action/home__type_support.cpp.o[0m
+[6.478s] [ 45%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_motion_interface_ros_msgs/action/set_joint_positions__type_support.cpp.o[0m
+[6.480s] [ 48%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_motion_interface_ros_msgs/msg/object_poses__type_support.cpp.o[0m
+[6.480s] [ 48%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_motion_interface_ros_msgs/action/set_cartesian_pose__type_support.cpp.o[0m
+[6.554s] [ 49%] [32m[1mLinking CXX shared library librobot_motion_interface_ros_msgs__rosidl_typesupport_c.so[0m
+[6.602s] [ 49%] Built target robot_motion_interface_ros_msgs__rosidl_typesupport_c
+[6.627s] [ 53%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_motion_interface_ros_msgs/msg/detail/object_poses__type_support.cpp.o[0m
+[6.627s] [ 53%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_motion_interface_ros_msgs/msg/detail/object_pose__type_support.cpp.o[0m
+[6.627s] [ 53%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__type_support.cpp.o[0m
+[6.627s] [ 54%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__type_support.cpp.o[0m
+[6.628s] [ 56%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_motion_interface_ros_msgs/action/detail/home__type_support.cpp.o[0m
+[6.809s] [ 57%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__type_support.c.o[0m
+[6.810s] [ 58%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_motion_interface_ros_msgs/msg/detail/object_pose__type_support.c.o[0m
+[6.811s] [ 60%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_motion_interface_ros_msgs/action/detail/home__type_support.c.o[0m
+[6.812s] [ 61%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_motion_interface_ros_msgs/msg/detail/object_poses__type_support.c.o[0m
+[6.813s] [ 62%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__type_support.c.o[0m
+[6.899s] [ 64%] [32m[1mLinking C shared library librobot_motion_interface_ros_msgs__rosidl_typesupport_introspection_c.so[0m
+[6.937s] [ 64%] Built target robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_c
+[6.941s] [ 66%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_motion_interface_ros_msgs/action/detail/dds_fastrtps/set_joint_positions__type_support.cpp.o[0m
+[6.941s] [ 66%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_motion_interface_ros_msgs/msg/detail/dds_fastrtps/object_pose__type_support.cpp.o[0m
+[6.941s] [ 68%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_motion_interface_ros_msgs/msg/detail/dds_fastrtps/object_poses__type_support.cpp.o[0m
+[6.942s] [ 69%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_motion_interface_ros_msgs/action/detail/dds_fastrtps/set_cartesian_pose__type_support.cpp.o[0m
+[6.943s] [ 70%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_motion_interface_ros_msgs/action/detail/dds_fastrtps/home__type_support.cpp.o[0m
+[7.047s] [ 73%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__type_support_c.cpp.o[0m
+[7.047s] [ 73%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_motion_interface_ros_msgs/msg/detail/object_pose__type_support_c.cpp.o[0m
+[7.048s] [ 74%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_motion_interface_ros_msgs/msg/detail/object_poses__type_support_c.cpp.o[0m
+[7.050s] [ 76%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_motion_interface_ros_msgs/action/detail/home__type_support_c.cpp.o[0m
+[7.053s] [ 77%] [32mBuilding CXX object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__type_support_c.cpp.o[0m
+[7.453s] [ 78%] [32m[1mLinking CXX shared library librobot_motion_interface_ros_msgs__rosidl_typesupport_cpp.so[0m
+[7.524s] [ 78%] Built target robot_motion_interface_ros_msgs__rosidl_typesupport_cpp
+[7.627s] [ 80%] [32m[1mLinking CXX shared library librobot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[7.640s] [ 81%] [32m[1mLinking CXX shared library librobot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[7.698s] [ 81%] Built target robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_c
+[7.699s] [ 81%] Built target robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cpp
+[7.776s] [ 82%] [32m[1mLinking CXX shared library librobot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.857s] [ 82%] Built target robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cpp
+[7.885s] [ 82%] Built target robot_motion_interface_ros_msgs
+[7.922s] [ 84%] [34m[1mGenerating Python code for ROS interfaces[0m
+[8.979s] [ 84%] Built target robot_motion_interface_ros_msgs__py
+[8.998s] [ 85%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/msg/_object_poses_s.c.o[0m
+[9.001s] [ 86%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/action/_set_cartesian_pose_s.c.o[0m
+[9.001s] [ 88%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/action/_home_s.c.o[0m
+[9.001s] [ 89%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/action/_set_joint_positions_s.c.o[0m
+[9.003s] [ 90%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/msg/_object_pose_s.c.o[0m
+[9.153s] [ 92%] [32m[1mLinking C shared library librobot_motion_interface_ros_msgs__rosidl_generator_py.so[0m
+[9.193s] [ 92%] Built target robot_motion_interface_ros_msgs__rosidl_generator_py
+[9.212s] [ 93%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/_robot_motion_interface_ros_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[9.215s] [ 94%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/_robot_motion_interface_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[9.217s] [ 96%] [32mBuilding C object CMakeFiles/robot_motion_interface_ros_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/_robot_motion_interface_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[9.345s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs_s__rosidl_typesupport_c.so[0m
+[9.349s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[9.357s] [100%] [32m[1mLinking C shared module rosidl_generator_py/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[9.368s] [100%] Built target robot_motion_interface_ros_msgs_s__rosidl_typesupport_c
+[9.375s] [100%] Built target robot_motion_interface_ros_msgs_s__rosidl_typesupport_introspection_c
+[9.383s] [100%] Built target robot_motion_interface_ros_msgs_s__rosidl_typesupport_fastrtps_c
+[9.393s] Invoked command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs -- -j16 -l16
+[9.399s] Invoking command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs
+[9.408s] -- Install configuration: ""
+[9.409s] -- Execute custom install script
+[9.409s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/ament_index/resource_index/rosidl_interfaces/robot_motion_interface_ros_msgs
+[9.409s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/action/SetCartesianPose.json
+[9.409s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/action/Home.json
+[9.409s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/action/SetJointPositions.json
+[9.409s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/msg/ObjectPose.json
+[9.409s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/msg/ObjectPoses.json
+[9.410s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/home__functions.h
+[9.410s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/home__struct.h
+[9.410s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/home__type_support.h
+[9.410s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__functions.h
+[9.410s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__struct.h
+[9.410s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__type_support.h
+[9.410s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__functions.h
+[9.410s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__struct.h
+[9.410s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__type_support.h
+[9.410s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/home.h
+[9.410s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/set_cartesian_pose.h
+[9.410s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/set_joint_positions.h
+[9.410s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_pose__functions.h
+[9.411s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_pose__struct.h
+[9.411s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_pose__type_support.h
+[9.411s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_poses__functions.h
+[9.411s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_poses__struct.h
+[9.411s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_poses__type_support.h
+[9.411s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/object_pose.h
+[9.411s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/object_poses.h
+[9.411s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/rosidl_generator_c__visibility_control.h
+[9.411s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/environment/library_path.sh
+[9.411s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/environment/library_path.dsv
+[9.412s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/home__rosidl_typesupport_fastrtps_c.h
+[9.412s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__rosidl_typesupport_fastrtps_c.h
+[9.412s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__rosidl_typesupport_fastrtps_c.h
+[9.412s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_pose__rosidl_typesupport_fastrtps_c.h
+[9.412s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_poses__rosidl_typesupport_fastrtps_c.h
+[9.412s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[9.412s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/home__rosidl_typesupport_introspection_c.h
+[9.412s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__rosidl_typesupport_introspection_c.h
+[9.412s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__rosidl_typesupport_introspection_c.h
+[9.412s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_pose__rosidl_typesupport_introspection_c.h
+[9.412s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_poses__rosidl_typesupport_introspection_c.h
+[9.412s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[9.413s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/home__builder.hpp
+[9.413s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/home__struct.hpp
+[9.413s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/home__traits.hpp
+[9.413s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/home__type_support.hpp
+[9.414s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__builder.hpp
+[9.414s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__struct.hpp
+[9.414s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__traits.hpp
+[9.414s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__type_support.hpp
+[9.414s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__builder.hpp
+[9.414s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__struct.hpp
+[9.414s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__traits.hpp
+[9.415s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__type_support.hpp
+[9.415s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/home.hpp
+[9.415s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/set_cartesian_pose.hpp
+[9.415s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/set_joint_positions.hpp
+[9.415s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_pose__builder.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_pose__struct.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_pose__traits.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_pose__type_support.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_poses__builder.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_poses__struct.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_poses__traits.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_poses__type_support.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/object_pose.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/object_poses.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/home__rosidl_typesupport_fastrtps_cpp.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__rosidl_typesupport_fastrtps_cpp.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_poses__rosidl_typesupport_fastrtps_cpp.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/home__rosidl_typesupport_introspection_cpp.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_cartesian_pose__rosidl_typesupport_introspection_cpp.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/action/detail/set_joint_positions__rosidl_typesupport_introspection_cpp.hpp
+[9.416s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_pose__rosidl_typesupport_introspection_cpp.hpp
+[9.417s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/include/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs/msg/detail/object_poses__rosidl_typesupport_introspection_cpp.hpp
+[9.417s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/environment/pythonpath.sh
+[9.417s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/environment/pythonpath.dsv
+[9.417s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[9.417s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[9.417s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[9.417s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/__init__.py
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/_robot_motion_interface_ros_msgs_s.ep.rosidl_typesupport_c.c
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/_robot_motion_interface_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/_robot_motion_interface_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/action/__init__.py
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/action/_home.py
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/action/_home_s.c
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/action/_set_cartesian_pose.py
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/action/_set_cartesian_pose_s.c
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/action/_set_joint_positions.py
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/action/_set_joint_positions_s.c
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/msg/__init__.py
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/msg/_object_pose.py
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/msg/_object_pose_s.c
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/msg/_object_poses.py
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/msg/_object_poses_s.c
+[9.418s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs_s__rosidl_typesupport_c.so
+[9.419s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs_s__rosidl_typesupport_fastrtps_c.so
+[9.419s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs_s__rosidl_typesupport_introspection_c.so
+[9.419s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs_s__rosidl_typesupport_fastrtps_c.so
+[9.419s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs_s__rosidl_typesupport_introspection_c.so
+[9.419s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs_s__rosidl_typesupport_c.so
+[9.419s] -- Symlinking: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/ament_index/resource_index/rust_packages/robot_motion_interface_ros_msgs
+[9.426s] -- Symlinking: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/rust/Cargo.toml
+[9.436s] -- Symlinking: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/rust/build.rs
+[9.443s] -- Symlinking: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/rust/src/action.rs
+[9.452s] -- Symlinking: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/rust/src/action/rmw.rs
+[9.458s] -- Symlinking: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/rust/src/lib.rs
+[9.464s] -- Symlinking: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/rust/src/msg.rs
+[9.472s] -- Symlinking: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/rust/src/msg/rmw.rs
+[9.478s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/action/SetCartesianPose.idl
+[9.478s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/action/Home.idl
+[9.478s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/action/SetJointPositions.idl
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/msg/ObjectPose.idl
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/msg/ObjectPoses.idl
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/action/SetCartesianPose.action
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/action/Home.action
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/action/SetJointPositions.action
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/msg/ObjectPose.msg
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/msg/ObjectPoses.msg
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/ament_index/resource_index/package_run_dependencies/robot_motion_interface_ros_msgs
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/ament_index/resource_index/parent_prefix_path/robot_motion_interface_ros_msgs
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/environment/ament_prefix_path.sh
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/environment/ament_prefix_path.dsv
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/environment/path.sh
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/environment/path.dsv
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/local_setup.bash
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/local_setup.sh
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/local_setup.zsh
+[9.479s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/local_setup.dsv
+[9.480s] -- Symlinking: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/package.dsv
+[9.487s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/ament_index/resource_index/packages/robot_motion_interface_ros_msgs
+[9.487s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/rosidl_cmake-extras.cmake
+[9.487s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.488s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.488s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[9.488s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[9.488s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.488s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.488s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/robot_motion_interface_ros_msgsConfig.cmake
+[9.488s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/robot_motion_interface_ros_msgsConfig-version.cmake
+[9.488s] -- Up-to-date symlink: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/package.xml
+[9.489s] -- Installing: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_generator_c.so
+[9.490s] -- Set non-toolchain portion of runtime path of "/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_generator_c.so" to ""
+[9.490s] -- Installing: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_c.so
+[9.490s] -- Set non-toolchain portion of runtime path of "/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[9.491s] -- Installing: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_typesupport_introspection_c.so
+[9.491s] -- Set non-toolchain portion of runtime path of "/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_typesupport_introspection_c.so" to ""
+[9.492s] -- Installing: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_typesupport_c.so
+[9.492s] -- Set non-toolchain portion of runtime path of "/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_typesupport_c.so" to ""
+[9.492s] -- Installing: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cpp.so
+[9.493s] -- Set non-toolchain portion of runtime path of "/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[9.493s] -- Installing: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cpp.so
+[9.493s] -- Set non-toolchain portion of runtime path of "/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[9.494s] -- Installing: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_typesupport_cpp.so
+[9.494s] -- Set non-toolchain portion of runtime path of "/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_typesupport_cpp.so" to ""
+[9.557s] Listing '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs'...
+[9.557s] Compiling '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/__init__.py'...
+[9.557s] Listing '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/action'...
+[9.557s] Compiling '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/action/__init__.py'...
+[9.557s] Compiling '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/action/_home.py'...
+[9.557s] Compiling '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/action/_set_cartesian_pose.py'...
+[9.557s] Compiling '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/action/_set_joint_positions.py'...
+[9.557s] Listing '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/msg'...
+[9.557s] Compiling '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/msg/__init__.py'...
+[9.557s] Compiling '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/msg/_object_pose.py'...
+[9.557s] Compiling '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.12/site-packages/robot_motion_interface_ros_msgs/msg/_object_poses.py'...
+[9.562s] -- Installing: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_generator_py.so
+[9.562s] -- Set non-toolchain portion of runtime path of "/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/librobot_motion_interface_ros_msgs__rosidl_generator_py.so" to ""
+[9.563s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/export_robot_motion_interface_ros_msgs__rosidl_generator_cExport.cmake
+[9.563s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/export_robot_motion_interface_ros_msgs__rosidl_generator_cExport-noconfig.cmake
+[9.563s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/export_robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[9.563s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/export_robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.563s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cExport.cmake
+[9.563s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.563s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/robot_motion_interface_ros_msgs__rosidl_typesupport_cExport.cmake
+[9.563s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/robot_motion_interface_ros_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[9.563s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/export_robot_motion_interface_ros_msgs__rosidl_generator_cppExport.cmake
+[9.563s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/export_robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.563s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/export_robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.563s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[9.564s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.564s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/robot_motion_interface_ros_msgs__rosidl_typesupport_cppExport.cmake
+[9.564s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/robot_motion_interface_ros_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[9.564s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/export_robot_motion_interface_ros_msgs__rosidl_generator_pyExport.cmake
+[9.564s] -- Up-to-date: /workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/cmake/export_robot_motion_interface_ros_msgs__rosidl_generator_pyExport-noconfig.cmake
+[9.565s] Invoked command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs

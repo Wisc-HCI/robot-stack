@@ -1,0 +1,27 @@
+[0.008s] Invoking command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy PS1=(venv-dex) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv-dex) /usr/bin/cmake /workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs
+[0.018s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.393s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.397s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.399s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.422s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.443s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.445s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.477s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.996s] Traceback (most recent call last):
+[0.996s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>
+[0.996s]     from catkin_pkg.package import parse_package_string
+[0.996s] ModuleNotFoundError: No module named 'catkin_pkg'
+[1.012s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[1.012s]   execute_process(/opt/venv-dex/bin/python3
+[1.012s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.012s]   /workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs/package.xml
+[1.012s]   /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs/ament_cmake_core/package.cmake)
+[1.012s]   returned error code 1
+[1.012s] Call Stack (most recent call first):
+[1.012s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.012s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:220 (ament_package_xml)
+[1.012s]   CMakeLists.txt:17 (rosidl_generate_interfaces)
+[1.012s] 
+[1.012s] [0m
+[1.012s] -- Configuring incomplete, errors occurred!
+[1.016s] Invoked command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy PS1=(venv-dex) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv-dex) /usr/bin/cmake /workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs

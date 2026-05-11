@@ -1,0 +1,1 @@
+/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs/rosidl_typesupport_fastrtps_c/robot_motion_interface_ros_msgs/msg/detail/object_poses__rosidl_typesupport_fastrtps_c.h

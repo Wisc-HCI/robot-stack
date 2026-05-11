@@ -1,0 +1,8 @@
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion/build/CMakeFiles/robot_motion.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion/build/CMakeFiles/joint_torque.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion/build/CMakeFiles/edit_cache.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion/build/CMakeFiles/rebuild_cache.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion/build/CMakeFiles/list_install_components.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion/build/CMakeFiles/install.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion/build/CMakeFiles/install/local.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion/build/CMakeFiles/install/strip.dir

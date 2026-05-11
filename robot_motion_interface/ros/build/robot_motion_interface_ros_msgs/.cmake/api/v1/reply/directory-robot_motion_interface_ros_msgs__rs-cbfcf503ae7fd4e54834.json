@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "robot_motion_interface_ros_msgs__rs",
+		"source" : "/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs__rs"
+	}
+}

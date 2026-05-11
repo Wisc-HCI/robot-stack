@@ -1,0 +1,48 @@
+[0.009s] Invoking command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy PS1=(venv-dex) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv-dex) /usr/bin/cmake /workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs
+[0.031s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.395s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.405s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.407s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.433s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.456s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.458s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.494s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.775s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.904s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.461s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.482s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[4.814s] -- Found PythonExtra: /opt/venv-dex/bin/python3  
+[5.639s] -- Found Python3: /opt/venv-dex/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[5.743s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[5.765s] -- Added test 'lint_cmake' to check CMake code style
+[5.766s] -- Added test 'xmllint' to check XML markup files
+[5.768s] -- Configuring done (5.7s)
+[5.823s] -- Generating done (0.0s)
+[5.832s] -- Build files have been written to: /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs
+[5.839s] Invoked command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy PS1=(venv-dex) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv-dex) /usr/bin/cmake /workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs
+[5.840s] Invoking command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy PS1=(venv-dex) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv-dex) /usr/bin/cmake --build /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs -- -j16 -l16
+[5.888s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[5.896s] [  1%] Built target ament_cmake_python_symlink_robot_motion_interface_ros_msgs
+[5.953s] Traceback (most recent call last):
+[5.953s]   File "/opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description", line 21, in <module>
+[5.953s]     from rosidl_generator_type_description import generate_type_hash
+[5.953s]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py", line 24, in <module>
+[5.953s]     from rosidl_parser.parser import parse_idl_file
+[5.953s]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_parser/parser.py", line 20, in <module>
+[5.954s]     from lark import Lark
+[5.954s] ModuleNotFoundError: No module named 'lark'
+[5.959s] gmake[2]: *** [CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_type_description.dir/build.make:83: rosidl_generator_type_description/robot_motion_interface_ros_msgs/action/SetCartesianPose.json] Error 1
+[5.959s] gmake[1]: *** [CMakeFiles/Makefile2:215: CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_type_description.dir/all] Error 2
+[5.960s] gmake[1]: *** Waiting for unfinished jobs....
+[6.058s] running egg_info
+[6.067s] creating robot_motion_interface_ros_msgs.egg-info
+[6.067s] writing robot_motion_interface_ros_msgs.egg-info/PKG-INFO
+[6.067s] writing dependency_links to robot_motion_interface_ros_msgs.egg-info/dependency_links.txt
+[6.067s] writing top-level names to robot_motion_interface_ros_msgs.egg-info/top_level.txt
+[6.068s] writing manifest file 'robot_motion_interface_ros_msgs.egg-info/SOURCES.txt'
+[6.117s] listing git files failed - pretending there aren't any
+[6.118s] reading manifest file 'robot_motion_interface_ros_msgs.egg-info/SOURCES.txt'
+[6.119s] writing manifest file 'robot_motion_interface_ros_msgs.egg-info/SOURCES.txt'
+[6.142s] [  1%] Built target ament_cmake_python_build_robot_motion_interface_ros_msgs_egg
+[6.143s] gmake: *** [Makefile:146: all] Error 2
+[6.146s] Invoked command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy PS1=(venv-dex) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ VIRTUAL_ENV_PROMPT=(venv-dex) /usr/bin/cmake --build /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs -- -j16 -l16

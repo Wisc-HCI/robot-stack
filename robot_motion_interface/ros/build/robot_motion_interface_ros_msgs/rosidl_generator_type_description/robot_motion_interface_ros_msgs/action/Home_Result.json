@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "robot_motion_interface_ros_msgs/action/Home_Result",
+      "fields": [
+        {
+          "name": "success",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "robot_motion_interface_ros_msgs/action/Home_Result",
+      "hash_string": "RIHS01_d5f145e2e9bdb1b8eafc4a401d44084bdb79b48972444fa7f2dc3c379a4e76f4"
+    }
+  ]
+}

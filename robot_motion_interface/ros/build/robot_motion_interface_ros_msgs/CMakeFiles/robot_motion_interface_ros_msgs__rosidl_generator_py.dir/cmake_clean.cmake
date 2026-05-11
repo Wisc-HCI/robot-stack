@@ -1,0 +1,19 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/action/_home_s.c.o"
+  "CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/action/_home_s.c.o.d"
+  "CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/action/_set_cartesian_pose_s.c.o"
+  "CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/action/_set_cartesian_pose_s.c.o.d"
+  "CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/action/_set_joint_positions_s.c.o"
+  "CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/action/_set_joint_positions_s.c.o.d"
+  "CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/msg/_object_pose_s.c.o"
+  "CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/msg/_object_pose_s.c.o.d"
+  "CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/msg/_object_poses_s.c.o"
+  "CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/robot_motion_interface_ros_msgs/msg/_object_poses_s.c.o.d"
+  "librobot_motion_interface_ros_msgs__rosidl_generator_py.pdb"
+  "librobot_motion_interface_ros_msgs__rosidl_generator_py.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/robot_motion_interface_ros_msgs__rosidl_generator_py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

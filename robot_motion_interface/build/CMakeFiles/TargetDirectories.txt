@@ -1,0 +1,9 @@
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion_interface/build/CMakeFiles/robot_motion_interface.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion_interface/build/CMakeFiles/panda.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion_interface/build/CMakeFiles/tesollo.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion_interface/build/CMakeFiles/edit_cache.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion_interface/build/CMakeFiles/rebuild_cache.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion_interface/build/CMakeFiles/list_install_components.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion_interface/build/CMakeFiles/install.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion_interface/build/CMakeFiles/install/local.dir
+/home/mya/Desktop/github/HCI/dexterity-interface/libs/robot_motion_interface/build/CMakeFiles/install/strip.dir

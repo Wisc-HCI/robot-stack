@@ -1,0 +1,63 @@
+[0.000000] (-) TimerEvent: {}
+[0.000516] (robot_motion_interface_ros_msgs) JobQueued: {'identifier': 'robot_motion_interface_ros_msgs', 'dependencies': OrderedDict()}
+[0.000593] (robot_motion_interface_ros) JobQueued: {'identifier': 'robot_motion_interface_ros', 'dependencies': OrderedDict({'robot_motion_interface_ros_msgs': '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs'})}
+[0.000708] (robot_motion_interface_ros_msgs) JobStarted: {'identifier': 'robot_motion_interface_ros_msgs'}
+[0.009329] (robot_motion_interface_ros_msgs) JobProgress: {'identifier': 'robot_motion_interface_ros_msgs', 'progress': 'cmake'}
+[0.010111] (robot_motion_interface_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '/workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs'], 'cwd': '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs', 'env': OrderedDict({'HOSTNAME': 'pop-os', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/lib:/opt/openrobots/lib:', 'HOME': '/root', 'OLDPWD': '/workspace', 'ROS_PYTHON_VERSION': '3', 'PS1': '(venv-dex) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/opt/openrobots/lib/pkgconfig:', 'TERM': 'xterm', 'PATH': '/opt/venv-dex/bin:/opt/ros/jazzy/bin:/root/.cargo/bin:/opt/openrobots/bin:/opt/venv-dex/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'VIRTUAL_ENV_PROMPT': '(venv-dex)', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'VIRTUAL_ENV': '/opt/venv-dex', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages:/opt/openrobots/lib/python3.10/site-packages:', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/openrobots::/opt/ros/jazzy'}), 'shell': False}
+[0.034366] (robot_motion_interface_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099869] (-) TimerEvent: {}
+[0.200081] (-) TimerEvent: {}
+[0.300360] (-) TimerEvent: {}
+[0.400583] (-) TimerEvent: {}
+[0.422769] (robot_motion_interface_ros_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.432815] (robot_motion_interface_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.434965] (robot_motion_interface_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.464095] (robot_motion_interface_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.489985] (robot_motion_interface_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.492686] (robot_motion_interface_ros_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.500646] (-) TimerEvent: {}
+[0.526442] (robot_motion_interface_ros_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.600718] (-) TimerEvent: {}
+[0.700917] (-) TimerEvent: {}
+[0.801152] (-) TimerEvent: {}
+[0.901507] (-) TimerEvent: {}
+[0.969831] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):\n'}
+[0.970080] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'  execute_process(/opt/venv-dex/bin/python3 -m rosidl_adapter --package-name\n'}
+[0.970138] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'  robot_motion_interface_ros_msgs --arguments-file\n'}
+[0.970185] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'  /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs/rosidl_adapter__arguments__robot_motion_interface_ros_msgs.json\n'}
+[0.970231] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'  --output-dir\n'}
+[0.970274] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'  /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs/rosidl_adapter/robot_motion_interface_ros_msgs\n'}
+[0.970318] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'  --output-file\n'}
+[0.970367] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'  /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs/rosidl_adapter/robot_motion_interface_ros_msgs.idls)\n'}
+[0.970411] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'  returned error code 1:\n'}
+[0.970455] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'\n'}
+[0.970497] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[0.970542] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'\n'}
+[0.970584] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'    File "<frozen runpy>", line 198, in _run_module_as_main\n'}
+[0.970627] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'    File "<frozen runpy>", line 88, in _run_code\n'}
+[0.970671] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[0.970721] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'      sys.exit(main())\n'}
+[0.970763] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'               ^^^^^^\n'}
+[0.970803] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[0.970845] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[0.970888] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'                     ^^^^^^^^^^^^^^^\n'}
+[0.970951] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 28, in convert_to_idl\n'}
+[0.970989] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'      from rosidl_adapter.action import convert_action_to_idl\n'}
+[0.971029] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/action/__init__.py", line 16, in <module>\n'}
+[0.971069] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'      from rosidl_adapter.resource import expand_template\n'}
+[0.971109] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'    File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/resource/__init__.py", line 19, in <module>\n'}
+[0.971148] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'      import em\n'}
+[0.971187] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'\n'}
+[0.971226] (robot_motion_interface_ros_msgs) StderrLine: {'line': b"  ModuleNotFoundError: No module named 'em'\n"}
+[0.971265] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'\n'}
+[0.971307] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.971347] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'  /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)\n'}
+[0.971386] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'  CMakeLists.txt:17 (rosidl_generate_interfaces)\n'}
+[0.971423] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'\n'}
+[0.971460] (robot_motion_interface_ros_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.971499] (robot_motion_interface_ros_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.976796] (robot_motion_interface_ros_msgs) CommandEnded: {'returncode': 1}
+[0.994203] (robot_motion_interface_ros_msgs) JobEnded: {'identifier': 'robot_motion_interface_ros_msgs', 'rc': 1}
+[1.001559] (-) TimerEvent: {}
+[1.004493] (robot_motion_interface_ros) JobSkipped: {'identifier': 'robot_motion_interface_ros'}
+[1.004561] (-) EventReactorShutdown: {}

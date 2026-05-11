@@ -1,0 +1,209 @@
+[0.150s] DEBUG:colcon:Command line arguments: ['/root/miniconda3/envs/env_isaaclab/bin/colcon', 'build', '--symlink-install', '--cmake-clean-cache']
+[0.150s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=True, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7a95cdb94e10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a95cd77bc90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a95cd77bc90>>)
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.169s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspace/libs/robot_motion_interface/ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros) by extension 'ignore_ament_install'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros) by extensions ['colcon_pkg']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros) by extension 'colcon_pkg'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros) by extensions ['colcon_meta']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros) by extension 'colcon_meta'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros) by extensions ['ros']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros) by extension 'ros'
+[0.220s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_motion_interface_ros' with type 'ros.ament_python' and name 'robot_motion_interface_ros'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros_msgs) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros_msgs) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros_msgs) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros_msgs) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros_msgs) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros_msgs) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros_msgs) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_motion_interface_ros_msgs) by extension 'ros'
+[0.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_motion_interface_ros_msgs' with type 'ros.ament_cmake' and name 'robot_motion_interface_ros_msgs'
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros_msgs' build argument 'cmake_args' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros_msgs' build argument 'cmake_target' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros_msgs' build argument 'cmake_clean_cache' from command line to 'True'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.233s] DEBUG:colcon.colcon_core.verb:Building package 'robot_motion_interface_ros_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs', 'merge_install': False, 'path': '/workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros' build argument 'cmake_args' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros' build argument 'cmake_target' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros' build argument 'cmake_clean_cache' from command line to 'True'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.233s] Level 5:colcon.colcon_core.verb:set package 'robot_motion_interface_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.233s] DEBUG:colcon.colcon_core.verb:Building package 'robot_motion_interface_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': True, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros', 'merge_install': False, 'path': '/workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros', 'symlink_install': True, 'test_result_base': None}
+[0.233s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.234s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.234s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs' with build type 'ament_cmake'
+[0.234s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs'
+[0.237s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.237s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.237s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.244s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs': CONDA_PROMPT_MODIFIER=(env_isaaclab) /usr/local/bin/cmake /workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs
+[5.284s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs' returned '0': CONDA_PROMPT_MODIFIER=(env_isaaclab) /usr/local/bin/cmake /workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs
+[5.285s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs': CONDA_PROMPT_MODIFIER=(env_isaaclab) /usr/local/bin/cmake --build /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs -- -j16 -l16
+[10.812s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs' returned '0': CONDA_PROMPT_MODIFIER=(env_isaaclab) /usr/local/bin/cmake --build /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs -- -j16 -l16
+[10.879s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs': CONDA_PROMPT_MODIFIER=(env_isaaclab) /usr/local/bin/cmake --install /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs
+[11.301s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_motion_interface_ros_msgs)
+[11.301s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs' returned '0': CONDA_PROMPT_MODIFIER=(env_isaaclab) /usr/local/bin/cmake --install /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs
+[11.303s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs' for CMake module files
+[11.304s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs' for CMake config files
+[11.304s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_motion_interface_ros_msgs', 'cmake_prefix_path')
+[11.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/cmake_prefix_path.ps1'
+[11.305s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/cmake_prefix_path.dsv'
+[11.305s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/cmake_prefix_path.sh'
+[11.306s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib'
+[11.306s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_motion_interface_ros_msgs', 'ld_library_path_lib')
+[11.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/ld_library_path_lib.ps1'
+[11.306s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/ld_library_path_lib.dsv'
+[11.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/ld_library_path_lib.sh'
+[11.307s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/bin'
+[11.307s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/pkgconfig/robot_motion_interface_ros_msgs.pc'
+[11.307s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.11/site-packages'
+[11.308s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_motion_interface_ros_msgs', 'pythonpath')
+[11.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/pythonpath.ps1'
+[11.308s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/pythonpath.dsv'
+[11.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/pythonpath.sh'
+[11.309s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/bin'
+[11.309s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/package.ps1'
+[11.309s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/package.dsv'
+[11.310s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/package.sh'
+[11.310s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/package.bash'
+[11.311s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/package.zsh'
+[11.312s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/colcon-core/packages/robot_motion_interface_ros_msgs)
+[11.313s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_motion_interface_ros_msgs)
+[11.313s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs' for CMake module files
+[11.313s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs' for CMake config files
+[11.314s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_motion_interface_ros_msgs', 'cmake_prefix_path')
+[11.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/cmake_prefix_path.ps1'
+[11.315s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/cmake_prefix_path.dsv'
+[11.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/cmake_prefix_path.sh'
+[11.315s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib'
+[11.315s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_motion_interface_ros_msgs', 'ld_library_path_lib')
+[11.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/ld_library_path_lib.ps1'
+[11.316s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/ld_library_path_lib.dsv'
+[11.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/ld_library_path_lib.sh'
+[11.316s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/bin'
+[11.316s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/pkgconfig/robot_motion_interface_ros_msgs.pc'
+[11.317s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.11/site-packages'
+[11.317s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_motion_interface_ros_msgs', 'pythonpath')
+[11.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/pythonpath.ps1'
+[11.317s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/pythonpath.dsv'
+[11.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/hook/pythonpath.sh'
+[11.318s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/bin'
+[11.318s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/package.ps1'
+[11.319s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/package.dsv'
+[11.319s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/package.sh'
+[11.320s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/package.bash'
+[11.320s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/robot_motion_interface_ros_msgs/package.zsh'
+[11.320s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/share/colcon-core/packages/robot_motion_interface_ros_msgs)
+[11.320s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros' with build type 'ament_python'
+[11.320s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_motion_interface_ros', 'ament_prefix_path')
+[11.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/robot_motion_interface_ros/hook/ament_prefix_path.ps1'
+[11.321s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/robot_motion_interface_ros/hook/ament_prefix_path.dsv'
+[11.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/robot_motion_interface_ros/hook/ament_prefix_path.sh'
+[11.322s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.322s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.493s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros'
+[11.493s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.493s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros': AMENT_PREFIX_PATH=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs:/jazzy_ws/install:/opt/openrobots CONDA_PROMPT_MODIFIER=(env_isaaclab) LD_LIBRARY_PATH=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib:/jazzy_ws/install/opt/spdlog_vendor/lib:/jazzy_ws/install/opt/mimick_vendor/lib:/jazzy_ws/install/opt/libyaml_vendor/lib:/jazzy_ws/install/lib:/opt/openrobots/lib:/isaaclab/_isaac_sim/.:/isaaclab/_isaac_sim/exts/isaacsim.robot.schema/plugins/lib:/isaaclab/_isaac_sim/exts/isaacsim.robot_motion.lula/pip_prebundle:/isaaclab/_isaac_sim/exts/isaacsim.asset.exporter.urdf/pip_prebundle:/isaaclab/_isaac_sim/kit:/isaaclab/_isaac_sim/kit/kernel/plugins:/isaaclab/_isaac_sim/kit/libs/iray:/isaaclab/_isaac_sim/kit/plugins:/isaaclab/_isaac_sim/kit/plugins/bindings-python:/isaaclab/_isaac_sim/kit/plugins/carb_gfx:/isaaclab/_isaac_sim/kit/plugins/rtx:/isaaclab/_isaac_sim/kit/plugins/gpu.foundation PYTHONPATH=/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros/prefix_override:/root/miniconda3/envs/env_isaaclab/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/lib/python3.11/site-packages:/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.11/site-packages:${PYTHONPATH} /root/miniconda3/envs/env_isaaclab/bin/python3.11 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros/build --no-deps symlink_data
+[12.278s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_motion_interface_ros', 'pythonpath_develop')
+[12.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros/share/robot_motion_interface_ros/hook/pythonpath_develop.ps1'
+[12.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros' returned '0': AMENT_PREFIX_PATH=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs:/jazzy_ws/install:/opt/openrobots CONDA_PROMPT_MODIFIER=(env_isaaclab) LD_LIBRARY_PATH=/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib:/jazzy_ws/install/opt/spdlog_vendor/lib:/jazzy_ws/install/opt/mimick_vendor/lib:/jazzy_ws/install/opt/libyaml_vendor/lib:/jazzy_ws/install/lib:/opt/openrobots/lib:/isaaclab/_isaac_sim/.:/isaaclab/_isaac_sim/exts/isaacsim.robot.schema/plugins/lib:/isaaclab/_isaac_sim/exts/isaacsim.robot_motion.lula/pip_prebundle:/isaaclab/_isaac_sim/exts/isaacsim.asset.exporter.urdf/pip_prebundle:/isaaclab/_isaac_sim/kit:/isaaclab/_isaac_sim/kit/kernel/plugins:/isaaclab/_isaac_sim/kit/libs/iray:/isaaclab/_isaac_sim/kit/plugins:/isaaclab/_isaac_sim/kit/plugins/bindings-python:/isaaclab/_isaac_sim/kit/plugins/carb_gfx:/isaaclab/_isaac_sim/kit/plugins/rtx:/isaaclab/_isaac_sim/kit/plugins/gpu.foundation PYTHONPATH=/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros/prefix_override:/root/miniconda3/envs/env_isaaclab/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/lib/python3.11/site-packages:/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros_msgs/lib/python3.11/site-packages:${PYTHONPATH} /root/miniconda3/envs/env_isaaclab/bin/python3.11 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros/build --no-deps symlink_data
+[12.279s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros/share/robot_motion_interface_ros/hook/pythonpath_develop.dsv'
+[12.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros/share/robot_motion_interface_ros/hook/pythonpath_develop.sh'
+[12.281s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros' for CMake module files
+[12.281s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros' for CMake config files
+[12.282s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/lib'
+[12.282s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/bin'
+[12.282s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/lib/pkgconfig/robot_motion_interface_ros.pc'
+[12.282s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/lib/python3.11/site-packages'
+[12.282s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_motion_interface_ros', 'pythonpath')
+[12.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/robot_motion_interface_ros/hook/pythonpath.ps1'
+[12.283s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/robot_motion_interface_ros/hook/pythonpath.dsv'
+[12.284s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/robot_motion_interface_ros/hook/pythonpath.sh'
+[12.285s] Level 1:colcon.colcon_core.environment:checking '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/bin'
+[12.285s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_motion_interface_ros)
+[12.285s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/robot_motion_interface_ros/package.ps1'
+[12.286s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/robot_motion_interface_ros/package.dsv'
+[12.287s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/robot_motion_interface_ros/package.sh'
+[12.287s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/robot_motion_interface_ros/package.bash'
+[12.287s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/robot_motion_interface_ros/package.zsh'
+[12.288s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/libs/robot_motion_interface/ros/install/robot_motion_interface_ros/share/colcon-core/packages/robot_motion_interface_ros)
+[12.288s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.288s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.288s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.288s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.290s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify2': 'notify2' not found
+[12.290s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[12.290s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.290s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.290s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.290s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/libs/robot_motion_interface/ros/install/local_setup.ps1'
+[12.291s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/libs/robot_motion_interface/ros/install/_local_setup_util_ps1.py'
+[12.292s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/libs/robot_motion_interface/ros/install/setup.ps1'
+[12.293s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/libs/robot_motion_interface/ros/install/local_setup.sh'
+[12.293s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/libs/robot_motion_interface/ros/install/_local_setup_util_sh.py'
+[12.293s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/libs/robot_motion_interface/ros/install/setup.sh'
+[12.294s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/libs/robot_motion_interface/ros/install/local_setup.bash'
+[12.294s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/libs/robot_motion_interface/ros/install/setup.bash'
+[12.295s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/libs/robot_motion_interface/ros/install/local_setup.zsh'
+[12.295s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/libs/robot_motion_interface/ros/install/setup.zsh'

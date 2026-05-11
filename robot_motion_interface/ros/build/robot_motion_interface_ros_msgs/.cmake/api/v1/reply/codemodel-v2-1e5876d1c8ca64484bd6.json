@@ -1,0 +1,267 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-92b66ad882d1b4d33593.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "robot_motion_interface_ros_msgs__py",
+					"jsonFile" : "directory-robot_motion_interface_ros_msgs__py-28aa7ab1284c2483196f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "robot_motion_interface_ros_msgs__rs",
+					"jsonFile" : "directory-robot_motion_interface_ros_msgs__rs-cbfcf503ae7fd4e54834.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs/robot_motion_interface_ros_msgs__rs",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "robot_motion_interface_ros_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_robot_motion_interface_ros_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_robot_motion_interface_ros_msgs_egg-34fb18a2fb0b4fc9002a.json",
+					"name" : "ament_cmake_python_build_robot_motion_interface_ros_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_robot_motion_interface_ros_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_robot_motion_interface_ros_msgs-20c5c33b0aeaf274746e.json",
+					"name" : "ament_cmake_python_symlink_robot_motion_interface_ros_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs-f9812be5dc9e13d90873.json",
+					"name" : "robot_motion_interface_ros_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs__cpp-0e16a39940d45ec96ba1.json",
+					"name" : "robot_motion_interface_ros_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "robot_motion_interface_ros_msgs__py::@758b005d81303d4cf066",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs__py-4a718cbb6d1acee8ab6b.json",
+					"name" : "robot_motion_interface_ros_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs__rosidl_generator_c-0b8c2f285a58c893e498.json",
+					"name" : "robot_motion_interface_ros_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs__rosidl_generator_py-3ae6f6899052c43cc4c9.json",
+					"name" : "robot_motion_interface_ros_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs__rosidl_generator_type_description-ba40daf8c2283e71c8dc.json",
+					"name" : "robot_motion_interface_ros_msgs__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs__rosidl_typesupport_c-a06d55ae15ee9835519e.json",
+					"name" : "robot_motion_interface_ros_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs__rosidl_typesupport_cpp-1860343f49605c830b3a.json",
+					"name" : "robot_motion_interface_ros_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_c-f78bc3c7c3e2f55bc56c.json",
+					"name" : "robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cpp-45580b4050aef5c8e237.json",
+					"name" : "robot_motion_interface_ros_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_c-a20f17147fb4ba0b5797.json",
+					"name" : "robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cpp-28f407a2e3cc2f222c2b.json",
+					"name" : "robot_motion_interface_ros_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "robot_motion_interface_ros_msgs__rs::@1b1228c48e96c7daf672",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs__rs-47d0a67c15cec0075991.json",
+					"name" : "robot_motion_interface_ros_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs_s__rosidl_typesupport_c-635ddfe6cd98ac46ffbc.json",
+					"name" : "robot_motion_interface_ros_msgs_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs_s__rosidl_typesupport_fastrtps_c-8cb4a0157d8f28a13886.json",
+					"name" : "robot_motion_interface_ros_msgs_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs_s__rosidl_typesupport_introspection_c-ea798620ac435cb3f458.json",
+					"name" : "robot_motion_interface_ros_msgs_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_motion_interface_ros_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_motion_interface_ros_msgs_uninstall-c9f597d469ba0a8b1785.json",
+					"name" : "robot_motion_interface_ros_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-27b8cea476e55d3188fc.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs",
+		"source" : "/workspace/libs/robot_motion_interface/ros/src/robot_motion_interface_ros_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
