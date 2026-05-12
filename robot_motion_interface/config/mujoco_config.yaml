@@ -39,7 +39,7 @@ ee_frames:
   - right_delto_offset_link
 
 # This should be smaller but there is drift up
-target_tolerance: 1.3
+target_tolerance: 0.25
 
 
 kp: [
