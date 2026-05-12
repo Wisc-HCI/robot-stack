@@ -216,7 +216,9 @@ class MujocoInterface(Interface):
         qpos = self._data.qpos[self._joint_qpos_indices]
         qvel = self._data.qvel[self._joint_dof_indices]
         self._cur_state = np.concatenate([qpos, qvel])
-        joint_efforts = self._controller.step(self._cur_state)
+        # joint_efforts = self._controller.step(self._cur_state)
+        # TEST: TODO: FIX LATER
+        joint_efforts = np.clip(self._controller.step(self._cur_state), -100.0, 100.0)
         self._data.qfrc_applied[self._joint_dof_indices] = joint_efforts
         mujoco.mj_step(self._model, self._data)
 
