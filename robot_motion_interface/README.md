@@ -2,9 +2,8 @@
 Interface for Panda, Tesollo, isaacsim. Can be extended to more robots. Contains unified ROS interface for all robots.
 
 ## Requirements
-* Ubuntu Machine. Since this is a C++ library, it should work with other operating systems, but the install instructions are only made for Ubuntu machines.
-* robot_motion installed on machine. TODO: futher instructions
-
+* Ubuntu Machine.
+* robot_motion installed on machine (see its readme)
 
 ### Panda Requirements
 * Ubuntu Machine with the [Real Time Kernel](https://frankaemika.github.io/docs/installation_linux.html#setting-up-the-real-time-kernel)
@@ -12,7 +11,7 @@ Interface for Panda, Tesollo, isaacsim. Can be extended to more robots. Contains
 	* Robot system version: 4.2.X (FER pandas). This is compatible with Libfranka version >= 0.9.1 < 0.10.0. We will use 0.9.2.
 
 ### Tesollo Requirements
-* Tesollo 3 Finger Gripper (DG-3F) set to external mode with the switches. TODO: Add
+* Tesollo 3 Finger Gripper (DG-3F) set to external mode with the switches.
 
 # Setup Option 1
 Follow the instructions in the root README to setup and run the docker container.
@@ -66,7 +65,7 @@ First setup the C++ dependencies:
 Next, install the python files and the Panda C++ wrappers.
 1. Run the following (recommend doing this in venv venv-dex):
     ```bash
-    pip install -e libs/robot_motion_interface
+    pip install -e .
     ```
 
     You can test that the python wrappers were properly built by running `python -c "import robot_motion_interface; print('OK')"`
@@ -110,7 +109,7 @@ For the example tesollo interface, run the following:
 ### Python Examples
 TODO: CLEAN THESE UP and add more explanation
 
-Make sure you are in the `libs/robot_motion_interface` directory before running these.
+Make sure you are in the `robot_motion_interface` directory before running these.
 ```bash
 python3 -m  robot_motion_interface.examples.oscillating_ex_panda_tesollo
 python3 -m  robot_motion_interface.examples.oscillating_ex --interface panda
@@ -127,7 +126,7 @@ python3 -m  robot_motion_interface.examples.isaacsim_blocking
 
 ## ROS Running
 
-1. Make sure you are in the `libs/robot_motion_interface/ros` directory. Then build the package:
+1. Make sure you are in the `robot_motion_interface/ros` directory. Then build the package:
     ```bash
     colcon build --symlink-install
     source install/setup.bash
@@ -135,20 +134,20 @@ python3 -m  robot_motion_interface.examples.isaacsim_blocking
     2. Now you can run any of these:
     ```bash
     # Launch bimanual arms
-    ros2 run robot_motion_interface_ros interface --ros-args -p interface_type:=bimanual -p config_path:=/workspace/libs/robot_motion_interface/config/bimanual_arm_config.yaml
+    ros2 run robot_motion_interface_ros interface --ros-args -p interface_type:=bimanual -p config_path:=/workspace/robot_motion_interface/config/bimanual_arm_config.yaml
 
     # Launch simulation
-    ros2 run robot_motion_interface_ros interface --ros-args -p interface_type:=isaacsim -p config_path:=/workspace/libs/robot_motion_interface/config/isaacsim_config.yaml
+    ros2 run robot_motion_interface_ros interface --ros-args -p interface_type:=isaacsim -p config_path:=/workspace/robot_motion_interface/config/isaacsim_config.yaml
 
     # Launch simulation with object interface
-    ros2 run robot_motion_interface_ros interface --ros-args -p interface_type:=isaacsim_object -p config_path:=/workspace/libs/robot_motion_interface/config/isaacsim_config.yaml
+    ros2 run robot_motion_interface_ros interface --ros-args -p interface_type:=isaacsim_object -p config_path:=/workspace/robot_motion_interface/config/isaacsim_config.yaml
 
 
     # Launch left Panda
-    ros2 run robot_motion_interface_ros interface --ros-args -p interface_type:=panda -p config_path:=/workspace/libs/robot_motion_interface/config/left_panda_config.yaml
+    ros2 run robot_motion_interface_ros interface --ros-args -p interface_type:=panda -p config_path:=/workspace/robot_motion_interface/config/left_panda_config.yaml
 
     # Launch left Tesollo
-    ros2 run robot_motion_interface_ros interface --ros-args -p interface_type:=tesollo -p config_path:=/workspace/libs/robot_motion_interface/config/left_tesollo_config.yaml
+    ros2 run robot_motion_interface_ros interface --ros-args -p interface_type:=tesollo -p config_path:=/workspace/robot_motion_interface/config/left_tesollo_config.yaml
     ```
 
 

@@ -24,7 +24,7 @@ ros2 launch robot_description display.launch.py urdf_path:=[absolute path to urd
 ```
 Below is an example
 ```
-ros2 launch robot_description display.launch.py urdf_path:=/home/jeffr/dexterity-interface/libs/robot_description/ros/src/robot_description/urdf/bimanual_arms.urdf rviz_config:=/home/jeffr/dexterity-interface/libs/robot_description/ros/src/robot_description/config/bimanual_arm.rviz joint_state_topic:=/joint_states
+ros2 launch robot_description display.launch.py urdf_path:=/workspace/robot_description/ros/src/robot_description/urdf/bimanual_arms.urdf rviz_config:=/workspace/robot_description/ros/src/robot_description/config/bimanual_arm.rviz joint_state_topic:=/joint_states
 ```
 
 ```

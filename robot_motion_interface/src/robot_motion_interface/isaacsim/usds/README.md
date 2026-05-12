@@ -34,8 +34,8 @@ Note: this requires the `robot_description` dependency.
 To convert convert the bimanual arm setup to usd (xacro -> urdf -> usd), run the following: 
 ```bash
 # Setup proper directories
-export DESC=$(pwd)/libs/robot_description/ros/src/robot_description/urdf
-export SIM=$(pwd)/libs/robot_motion_interface/src/robot_motion_interface/isaacsim
+export DESC=$(pwd)/robot_description/ros/src/robot_description/urdf
+export SIM=$(pwd)/robot_motion_interface/src/robot_motion_interface/isaacsim
 mkdir -p $DESC/composites/tmp
 
 # Convert to urdf
