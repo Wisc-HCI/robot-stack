@@ -41,6 +41,7 @@ class Interface:
         # Need to track this to prevent drift when doing partial updates
         # and also to check target position
         self._joint_setpoint = home_joint_positions
+        self._cartesian_setpoint = None
 
         # Used to check if reached target position
         self._target_tolerance = target_tolerance
@@ -154,6 +155,9 @@ class Interface:
         q, joint_order = self._ik_solver.solve(x_list)
 
         self.set_joint_positions(q, joint_order, blocking)
+
+        # Set to counteract clearing from set_joint_positions
+        self._cartesian_setpoint = x_list 
 
     
 
@@ -324,6 +328,7 @@ class Interface:
         
         if not joint_names:
             self._joint_setpoint = q
+            self._cartesian_setpoint = None 
             return q
 
         n_update = len(joint_names)
@@ -334,6 +339,7 @@ class Interface:
         full_q = partial_update(self._joint_setpoint, self._joint_reference_map, q, joint_names) 
         
         self._joint_setpoint = full_q
+        self._cartesian_setpoint = None 
 
         return full_q
 
@@ -367,10 +373,11 @@ class Interface:
         if not ee_frames and n_ee != len(x_list):
             raise ValueError(f"If ee_frames is not passed, x must be length {n_ee}")
         
-        cur_x_list = self._forward_kinematics(self._joint_setpoint, self._base_frame, self._ee_frames)
+        cur_x_list =  self._cartesian_setpoint if self._cartesian_setpoint is not None \
+            else self._forward_kinematics(self._joint_setpoint, self._base_frame, self._ee_frames)
 
         full_x_list = partial_update(cur_x_list, self._ee_reference_map, x_list, ee_frames) 
-
+  
         return full_x_list
 
 

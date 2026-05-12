@@ -101,6 +101,7 @@ class TesolloInterface(Interface):
         """
         print("WARNING: set_cartesian_pose() is not implemented for Tesollo because of its joint complexity.")
 
+
     def set_control_mode(self, control_mode: Enum):
         """
         Set the control mode.
