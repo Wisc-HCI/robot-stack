@@ -26,21 +26,26 @@ _HTML_TEMPLATE = """<!DOCTYPE html>
 <body>
 <canvas id="c"></canvas>
 <script>
-  const ws = new WebSocket("ws://" + location.hostname + ":{ws_port}");
-  ws.binaryType = "blob";
   const canvas = document.getElementById("c");
   const ctx = canvas.getContext("2d");
-  ws.onmessage = (e) => {{
-    const url = URL.createObjectURL(e.data);
-    const img = new Image();
-    img.onload = () => {{
-      canvas.width = img.width;
-      canvas.height = img.height;
-      ctx.drawImage(img, 0, 0);
-      URL.revokeObjectURL(url);
+
+  function connect() {{
+    const ws = new WebSocket("ws://" + location.hostname + ":{ws_port}");
+    ws.binaryType = "blob";
+    ws.onmessage = (e) => {{
+      const url = URL.createObjectURL(e.data);
+      const img = new Image();
+      img.onload = () => {{
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.drawImage(img, 0, 0);
+        URL.revokeObjectURL(url);
+      }};
+      img.src = url;
     }};
-    img.src = url;
-  }};
+    ws.onclose = () => setTimeout(connect, 1000);
+  }}
+  connect();
 </script>
 </body>
 </html>"""
