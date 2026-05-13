@@ -88,7 +88,7 @@ NOTE: if you need to start another terminal, once the container is started, run 
 This is an example that makes the robot "dance". Run one of the following depending on your computer/container setup:
 ```bash
 # Docker a: Run on real hardware
-python3 -m  robot_motion_interface.examples.oscillating_ex --interface hardware
+python3 -m  robot_motion_interface.examples.oscillating_ex --interface real
 
 # Docker c: Run in isaacsim
 python3 -m  robot_motion_interface.examples.oscillating_ex --interface isaacsim
