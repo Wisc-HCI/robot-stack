@@ -1,1 +1,0 @@
-/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs/rosidl_generator_rs/robot_motion_interface_ros_msgs/rust/src/action.rs

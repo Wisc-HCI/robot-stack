@@ -1,1 +1,0 @@
-/workspace/libs/robot_motion_interface/ros/build/robot_motion_interface_ros_msgs/rosidl_typesupport_introspection_cpp/robot_motion_interface_ros_msgs/action/detail/home__rosidl_typesupport_introspection_cpp.hpp

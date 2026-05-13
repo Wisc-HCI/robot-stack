@@ -1,2 +1,0 @@
-[console_scripts]
-interface = robot_motion_interface_ros.interface_node:main
