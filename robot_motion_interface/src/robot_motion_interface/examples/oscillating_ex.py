@@ -19,36 +19,15 @@ from pathlib import Path
 import numpy as np
 
 
-
-def oscillate_setpoint(interface: Interface, base_setpoint:np.ndarray, idxs:list[int], 
-                       amplitude:float=0.3, period:float=2.0):
+def configure_interface(interface_str:str, parser: argparse.ArgumentParser) -> Interface:
     """
-    Continuously sinusoidally oscillates specified joint indices
+    Configure the robot interface based on real or sim
 
     Args:
-        isaac (Interface): The interface instance (can be IsaacsimInterface, PandaInterface, etc)
-        base_setpoint (np.ndarray): (n_idxs) The base joint positions to oscillate around.
-        idxs (list[int]): (n_idxs) Indices of joints to oscillate.
-        amplitude (float): Amplitude of oscillation (radians). Default is 0.3.
-        period (float): Period of oscillation in seconds. Default is 2.0.
-    """
-    while True:
-        t = time.time()
-        setpoint = base_setpoint.copy()
-        # Oscillate selected joints
-        for i in idxs:
-            setpoint[i] += amplitude * np.sin(2 * np.pi * t / period)
-
-        interface.set_joint_positions(setpoint)
-        time.sleep(0.05)  # ~20Hz update
-
-def main(interface_str:str, parser: argparse.ArgumentParser = None):
-    """
-    Simple example of arms oscillating (can be bimanual)
-
-    Args:
-        interface_str (str): Either "isaacsim" or "panda" ("tesolllo" to come soon)
+        interface_str (str): Either "isaacsim", "mujoco", "mujoco_browser", "real" 
         parser (ArgumentParser): Argument parser to pass to Isaacsim
+    Returns: 
+        (Interface) The specific child interface
     """
     config_dir = Path(__file__).resolve().parents[3] / "config"
 
@@ -57,42 +36,66 @@ def main(interface_str:str, parser: argparse.ArgumentParser = None):
         from robot_motion_interface.isaacsim.isaacsim_interface import IsaacsimInterface
         config_path = config_dir / "isaacsim_config.yaml"
         interface = IsaacsimInterface.from_yaml(config_path, parser)
-        idxs = [4, 5, 6, 7, 30, 31, 32, 33, 34, 35, 36, 37]
-        setpoint = np.zeros(38)
-        setpoint[:14] = np.array([0.0, 0.0, -np.pi/4, -np.pi/4, 0.0, 0.0,
-            -3*np.pi/4, -3*np.pi/4, 0.0, 0.0, np.pi/2, np.pi/2, np.pi/4, np.pi/4])
+
     elif (interface_str == "mujoco"):
         # Imported conditionally so that unessary dependencies aren't required
         from robot_motion_interface.mujoco.mujoco_interface import MujocoInterface
         config_path = config_dir / "mujoco_config.yaml"
         interface = MujocoInterface.from_yaml(config_path)
-        idxs = [4, 5, 6, 7, 30, 31, 32, 33, 34, 35, 36, 37]
-        setpoint = np.zeros(38)
-        setpoint[:14] = np.array([0.0, 0.0, -np.pi/4, -np.pi/4, 0.0, 0.0,
-            -3*np.pi/4, -3*np.pi/4, 0.0, 0.0, np.pi/2, np.pi/2, np.pi/4, np.pi/4])
     elif (interface_str == "mujoco_browser"):
         # Imported conditionally so that unessary dependencies aren't required
         from robot_motion_interface.mujoco.mujoco_browser import MujocoBrowserInterface
         config_path = config_dir / "mujoco_config.yaml"
         interface = MujocoBrowserInterface.from_yaml(config_path)
-        idxs = [4, 5, 6, 7, 30, 31, 32, 33, 34, 35, 36, 37]
-        setpoint = np.zeros(38)
-        setpoint[:14] = np.array([0.0, 0.0, -np.pi/4, -np.pi/4, 0.0, 0.0,
-            -3*np.pi/4, -3*np.pi/4, 0.0, 0.0, np.pi/2, np.pi/2, np.pi/4, np.pi/4])
-    elif (interface_str == "panda"):
+    elif (interface_str == "real"):
         # Imported conditionally so that unessary dependencies aren't required
-        from robot_motion_interface.panda.panda_interface import PandaInterface
-        config_path = config_dir / "right_panda_config.yaml"
-        interface = PandaInterface.from_yaml(config_path)
-        idxs = [2, 3]
-        setpoint = np.array([0.0, -np.pi/4,  0.0, -3*np.pi/4, 0.0,  np.pi/2, np.pi/4]) # home 
+        from robot_motion_interface.bimanual_interface import BimanualInterface
+        config_path = config_dir / "bimanual_arm_config.yaml"
+        interface = BimanualInterface.from_yaml(config_path)
     else:
         raise ValueError(f"Unsupported interface: {interface_str}")
-
     
-    interface.set_joint_positions(setpoint)
+    return interface
 
-    osc_thread = threading.Thread(target=oscillate_setpoint, args=(interface, setpoint, idxs))
+
+def oscillate_setpoint(interface: Interface, base_setpoint:np.ndarray, joint_names:list[str],
+                       amplitude:float=0.3, period:float=2.0):
+    """
+    Continuously sinusoidally oscillates specified joints
+
+    Args:
+        interface (Interface): The interface instance (can be IsaacsimInterface, PandaInterface, etc)
+        base_setpoint (np.ndarray): (n_joints) The base joint positions for all joints.
+        joint_names (list[str]): Names of joints to oscillate.
+        amplitude (float): Amplitude of oscillation (radians). Default is 0.3.
+        period (float): Period of oscillation in seconds. Default is 2.0.
+    """
+    while True:
+        t = time.time()
+        q = base_setpoint + amplitude * np.sin(2 * np.pi * t / period)
+        interface.set_joint_positions(q, joint_names)
+        time.sleep(0.05)  # ~20Hz update
+
+def main(interface_str:str, parser: argparse.ArgumentParser = None):
+    """
+    Simple example of arms oscillating (can be bimanual)
+
+    Args:
+        interface_str (str): Either "isaacsim", "mujoco", "mujoco_browser", or "real" 
+        parser (ArgumentParser): Argument parser to pass to Isaacsim
+    """
+  
+    interface = configure_interface(interface_str, parser)
+    
+    setpoint = np.array([0.0, 0.0, -3*np.pi/4, -3*np.pi/4,  # joint3 (x2), joint4 (x2)
+                       0.0, 0.0,                             # right_F2M3, right_F3M3
+                       0.0, 0.0, 0.0, 0.0, 0.0, 0.0])       # left/right F1-F3 M4
+    joint_names = [
+      'left_panda_joint3', 'right_panda_joint3','left_panda_joint4', 'right_panda_joint4',
+      'right_F2M3', 'right_F3M3','left_F1M4', 'left_F2M4', 'left_F3M4',
+      'right_F1M4', 'right_F2M4', 'right_F3M4']
+
+    osc_thread = threading.Thread(target=oscillate_setpoint, args=(interface, setpoint, joint_names))
     osc_thread.start()
 
     interface.start_loop()
@@ -109,7 +112,6 @@ def main(interface_str:str, parser: argparse.ArgumentParser = None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run joint oscillation demo for Panda or Isaacsim.")
-    parser.add_argument("--interface", type=str, choices=["panda", "isaacsim", "mujoco", "mujoco_browser"], required=True,
-                        help="Choose 'panda' for PandaInterface, 'isaacsim' for IsaacsimInterface.")
+    parser.add_argument("--interface", type=str, choices=["real", "isaacsim", "mujoco", "mujoco_browser"], required=True)
     args = parser.parse_args()
     main(args.interface, parser)

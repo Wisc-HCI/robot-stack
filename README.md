@@ -38,7 +38,7 @@ If you do not want to use docker (not recommended), you can instead look at the 
 There are several docker containers provided depending on what computer you are running on and what you are trying to run. Choose one of the following containers to build and run...
 
  
-a. On COMPUTER 1/3 (Docker with just ROS and workspace dependencies):
+a. On COMPUTER 1/3 (Docker with just ROS and workspace dependencies). This requires ~7.8GB of memory:
 
 ```bash
 xhost +local: # Note: This isn't very secure but is th easiest way to do this
@@ -49,7 +49,7 @@ docker compose -f docker/compose.ros.yaml run --rm ros-base
 NOTE: if you need to start another terminal, once the container is started, run `docker compose -f docker/compose.ros.yaml exec ros-base bash`. 
 
 
-b. On COMPUTER 2 (Docker with nvidia ROS and workspace dependencies):
+b. On COMPUTER 2 (Docker with nvidia ROS and workspace dependencies with GPU). This:
 
 ```bash
 xhost +local: # Note: This isn't very secure but is th easiest way to do this
@@ -60,7 +60,7 @@ docker compose -f docker/compose.ros.gpu.yaml run --rm ros-gpu
 NOTE: if you need to start another terminal, once the container is started, run `docker compose -f docker/compose.ros.gpu.yaml exec ros-gpu bash`. 
 
 
-c. On COMPUTER 2 (Docker with Isaacsim, ROS, and workplace dependencies):
+c. On COMPUTER 2 (Docker with Isaacsim, ROS, and workplace dependencies). This requires ~37.3GB of memory:
 
 ```bash
 xhost +local: # Note: This isn't very secure but is th easiest way to do this

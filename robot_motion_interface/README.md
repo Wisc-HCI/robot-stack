@@ -111,7 +111,6 @@ TODO: CLEAN THESE UP and add more explanation
 
 Make sure you are in the `robot_motion_interface` directory before running these.
 ```bash
-python3 -m  robot_motion_interface.examples.oscillating_ex_panda_tesollo
 python3 -m  robot_motion_interface.examples.oscillating_ex --interface panda
 python3 -m  robot_motion_interface.examples.oscillating_ex --interface isaacsim
 python3 -m  robot_motion_interface.examples.oscillating_ex --interface mujoco
