@@ -134,14 +134,18 @@ class BimanualArmObjectSceneCfg(BimanualArmSceneCfg):
     )
 
 
-    marker = AssetBaseCfg(
+    marker = RigidObjectCfg(
         prim_path="{ENV_REGEX_NS}/marker",
         spawn=sim_utils.UsdFileCfg(
             usd_path=str(USD_DIR / "marker.usd"),
             scale=(1.0, 1.0, 1.0),
+            rigid_props=sim_utils.RigidBodyPropertiesCfg(rigid_body_enabled=True, kinematic_enabled=True),
+            collision_props=sim_utils.CollisionPropertiesCfg(collision_enabled=False),
             visible=False,
         ),
     )
+
+
 
 
 

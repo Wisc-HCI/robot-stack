@@ -368,11 +368,9 @@ class IsaacsimInterface(Interface):
         """
 
         # TODO: Make this more abstract and make child more specific????
-        # x = obs["policy"][0]
         x = obs["policy"][0]
 
         # This puts obs on CPU which is not ideal for speed
-        # TODO: consider pybind torch extension???
         self._cur_state = (x.detach().to('cpu', dtype=torch.float64).contiguous().view(-1).numpy())
 
 

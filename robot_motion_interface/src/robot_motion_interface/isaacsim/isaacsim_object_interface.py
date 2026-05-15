@@ -1,4 +1,3 @@
-
 from robot_motion_interface.isaacsim.isaacsim_interface import IsaacsimInterface, IsaacsimControlMode
 import argparse  # IsaacLab requires using argparse
 from dataclasses import dataclass, field
@@ -10,8 +9,6 @@ import torch
 
 USD_DIR = Path(__file__).resolve().parent / "usds"
 
-
-# TODO: HANDLE geometry and usd shapes differently
 
 class ObjectHandle(Enum):
     """
@@ -197,14 +194,7 @@ class IsaacsimObjectInterface(IsaacsimInterface):
             handle (str): Handle of the object.
             visible (bool): True to show, False to hide.
         """
-        # env_obj = self.env.scene[handle]
-        # if hasattr(env_obj, 'set_visibilities'):
-        #     # For AssetBaseCfg
-        #     env_obj.set_visibilities([visible])
-        # elif hasattr(env_obj, 'set_visibility'):
-        #     # For RigidObjectCfg
-        #     env_obj.set_visibility(visible, [0])
-        self.env.scene[handle].set_visibility(visible, [0])
+        self.env.scene[handle].set_visibility(np.array([visible]), np.array([0]))
 
 
     def _load_objects(self):
