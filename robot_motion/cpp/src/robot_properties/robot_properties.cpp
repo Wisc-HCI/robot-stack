@@ -63,8 +63,6 @@ Eigen::VectorXd RobotProperties::forward_kinematics( const Eigen::VectorXd& q,
 Eigen::VectorXd RobotProperties::coriolis(Eigen::VectorXd q, Eigen::VectorXd dq) {
 
     if (pin_model_.njoints == 1) {
-        // std::cerr << "Warning: cannot calculate coriolis since urdf was not passed in constructor." << std::endl;
-        // TODO: UNCOMMENT AFTER DEBUG
         return Eigen::VectorXd::Zero(n_joints_);
     }
 
@@ -94,7 +92,6 @@ Eigen::VectorXd RobotProperties::gravity(Eigen::VectorXd q) {
 
 
 Eigen::VectorXd RobotProperties::friction(Eigen::VectorXd dq) {
-    // TODO: Friction model needed?
     return Eigen::VectorXd::Zero(n_joints_);
 
 }

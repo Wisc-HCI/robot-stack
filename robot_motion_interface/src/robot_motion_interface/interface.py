@@ -115,7 +115,6 @@ class Interface:
         """
         Called internally to block until reached target.
         Call interrupt_movement() to exit before reaching target.
-        TODO: Add timeout
         """
         self._blocking_event.set() 
         while(not self.check_reached_target() and self._blocking_event.is_set()):
@@ -244,7 +243,6 @@ class Interface:
         """
 
         if self._ik_solver:
-            # TODO: reset when use set_joint_position too
             self._ik_solver.reset()
 
         self.set_joint_positions(q=self._home_joint_positions, blocking=blocking)

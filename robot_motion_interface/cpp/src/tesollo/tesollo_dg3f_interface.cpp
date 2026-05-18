@@ -64,13 +64,11 @@ void TesolloDg3fInterface::start_loop() {
                     std::lock_guard<std::mutex> lock(this->control_loop_mutex_);
         
                     Eigen::VectorXd prev_pos = this->control_loop_joint_state_.head(this->rp_->n_joints());
-                    // TODO: Decide if want to average/lowpass current velocity with last velocity
                     Eigen::VectorXd vel = (pos - prev_pos) / dt;
                     Eigen::VectorXd joint_state(2 * this->rp_->n_joints()); joint_state << pos, vel;
                     this->control_loop_joint_state_ = joint_state;
 
                     Eigen::VectorXd torque = this->controller_->step(joint_state); 
-                    // TODO: allow disabling coriolis so warning doesn't pop up
         
                     Eigen::VectorXi duty = this->_torque_to_duty(torque);
                     this->_write_duty(duty);
@@ -107,7 +105,6 @@ void TesolloDg3fInterface::_write_duty(const Eigen::VectorXi& duty) {
 
 Eigen::VectorXi TesolloDg3fInterface::_torque_to_duty(const Eigen::VectorXd& torque) {
     
-    // TODO: Figure out these constants more
     double TORQUE_TO_VOLT = 13.875 / 1.15;
     double MAX_MOTOR_VOLT = 11.1;
     double MAX_DUTY = 1000;

@@ -29,8 +29,7 @@ setup(
     zip_safe=True,
     maintainer='jeffr',
     maintainer_email='jeffrey@theliuhome.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='Robot description',
     extras_require={
         'test': [
             'pytest',

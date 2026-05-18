@@ -8,9 +8,7 @@ from pathlib import Path
 
 class TesolloControlMode(Enum):
     JOINT_TORQUE = "joint_torque"
-    # Future: CART_TORQUE
 
-# TODO: UDPATE NAME TO TesolloDG3F
 class TesolloInterface(Interface):
     
     def __init__(self, ip:str, port:int, joint_names:list[str], home_joint_positions:np.ndarray,

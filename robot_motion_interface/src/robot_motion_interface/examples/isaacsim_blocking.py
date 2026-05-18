@@ -14,7 +14,9 @@ def run_blocking_targets(interface: IsaacsimInterface):
         interface (IsaacsimInterface): The interface Isaacsim interface instance
     """
 
-    time.sleep(25) # Wait for isaacsim to load. TODO: Update this when merge object branch
+    # Wait for isaacsim to start
+    while not interface.check_loop():
+        time.sleep(0.1)
     ee = ['left_delto_offset_link', 'right_delto_offset_link']
 
     print("Starting first target.")
@@ -50,11 +52,8 @@ def main():
 
 
     # Start at default position
-    setpoint = np.zeros(38)
-    setpoint[:14] = np.array([0.0, 0.0, -np.pi/4, -np.pi/4, 0.0, 0.0,
-        -3*np.pi/4, -3*np.pi/4, 0.0, 0.0, np.pi/2, np.pi/2, np.pi/4, np.pi/4])
-    isaac.set_joint_positions(setpoint) # TODO: REPLACE WITH HOME
-
+    isaac.home()
+    
     print("Starting THREAD")
     targets_thread = threading.Thread(target=run_blocking_targets, args=(isaac,))
     targets_thread.start()

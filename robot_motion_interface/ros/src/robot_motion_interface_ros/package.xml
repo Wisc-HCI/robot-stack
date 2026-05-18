@@ -5,7 +5,6 @@
   <version>0.0.0</version>
   <description>Wraps python robot_motion_interface</description>
   <maintainer email="mcschroder@wisc.edu">root</maintainer>
-  <license>TODO</license>
 
   <depend>robot_motion_interface_ros_msgs</depend>
 

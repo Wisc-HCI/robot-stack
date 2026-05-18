@@ -21,7 +21,6 @@ void Controller::set_setpoint(const Eigen::VectorXd& setpoint) {
 }
 
 void Controller::reset() {
-    // TODO: CHECK IF CORRECT
     setpoint_.setZero();
     prev_setpoint_.setZero();
     prev_state_.setZero();

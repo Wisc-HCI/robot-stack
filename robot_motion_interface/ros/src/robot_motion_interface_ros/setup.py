@@ -17,7 +17,6 @@ setup(
     maintainer='Mya Schroder',
     maintainer_email='mcschroder@wisc.edu',
     description='ROS2 Wrapper for robot_motion_interface',
-    license='TODO: License declaration',
     extras_require={
     },
     entry_points={

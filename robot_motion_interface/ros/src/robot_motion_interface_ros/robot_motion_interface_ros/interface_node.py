@@ -1,6 +1,4 @@
-""""
-TODO: Notes on using actions vs topics and talk about how only one type of motion can be called.
-"""
+
 from robot_motion_interface_ros_msgs.action import Home, SetJointPositions, SetCartesianPose
 from robot_motion_interface_ros_msgs.msg import ObjectPose, ObjectPoses
 
@@ -39,9 +37,28 @@ class InterfaceNode(Node):
                 Defaults: 0.1 s (10 Hz)
             set_joint_state_topic (str): Name of the topic used to send 
                 joint state commands. Default: "set_joint_state"
-            home_topic (str): Name of the topic used to send 
-                home the robot. Default: "home"
-            # TODO: REST if these
+            home_topic (str): Name of the topic used to send
+                home the robot. Default: "/home"
+            joint_state_topic (str): Name of the topic for publishing joint states.
+                Default: "/joint_state"
+            set_cartesian_pose_topic (str): Name of the topic used to send
+                cartesian pose commands. Default: "/set_cartesian_pose"
+            set_joint_state_action (str): Name of the action server for setting
+                joint positions. Default: "/set_joint_positions"
+            set_cartesian_pose_action (str): Name of the action server for setting
+                cartesian pose. Default: "/set_cartesian_pose"
+            home_action (str): Name of the action server for homing the robot.
+                Default: "/home"
+            trajectory_velocity (float): Max translational velocity for trajectories
+                in m/s. Default: 0.25
+            trajectory_angular_velocity (float): Max angular velocity for trajectories
+                in rad/s. Default: 2
+            trajectory_acceleration (float): Max acceleration for trajectories
+                in rad/s^2. Default: 0.5
+            dt (float): Seconds between waypoints and goal-reached checks.
+                0.01 recommended for real, 0.03 for sim. Default: 0.01
+            ee_pose_topic_prefix (str): Prefix for end-effector pose topics.
+                Default: "/cartesian_pose"
         """
         super().__init__('interface_node')
         
@@ -52,7 +69,7 @@ class InterfaceNode(Node):
         # Node customization
         self.declare_parameter('publish_period', 0.1)  # 10 hz default
         self.declare_parameter('joint_state_topic', '/joint_state')
-        self.declare_parameter('set_joint_state_topic', '/set_joint_state') # TODO: Correct name 
+        self.declare_parameter('set_joint_state_topic', '/set_joint_state')
         self.declare_parameter('set_cartesian_pose_topic', '/set_cartesian_pose')
         self.declare_parameter('home_topic', '/home')
         self.declare_parameter('set_joint_state_action', '/set_joint_positions')
@@ -62,7 +79,6 @@ class InterfaceNode(Node):
         self.declare_parameter('trajectory_angular_velocity', 2)  #  rad/s
         self.declare_parameter('trajectory_acceleration', 0.5)  #  rad/s
         # Seconds between waypoints and checking that goal is reached
-        # 0.01 is good for real and 0.03 is good for sim.
         self.declare_parameter('dt', 0.01)
         self.declare_parameter('ee_pose_topic_prefix', '/cartesian_pose')
 
@@ -114,7 +130,6 @@ class InterfaceNode(Node):
             from robot_motion_interface.tesollo.tesollo_interface import TesolloInterface
             self._interface = TesolloInterface.from_yaml(config_path)
         elif interface_type == "isaacsim":
-            self._dt = 0.02 # TODO: Don't overwrite
             
             # Prevent ros args from trickling down and causing isaacsim errors,
             # but preserve any -- Isaac/Kit SDK args passed via isaac_args launch arg
@@ -128,8 +143,6 @@ class InterfaceNode(Node):
             self.create_subscription(JointState, reset_sim_joint_position_topic, self.reset_joints_callback, 10)
             
         elif interface_type == "isaacsim_object":
-            self._dt = 0.02 # TODO: Don't overwrite
-            # TODO: HANDLE THIS BETTER
             # Prevent ros args from trickling down and causing isaacsim errors,
             # but preserve any -- Isaac/Kit SDK args passed via isaac_args launch arg
             import sys
@@ -468,7 +481,6 @@ class InterfaceNode(Node):
                 return result
             time.sleep(self._dt)
 
-        # TODO: FIGURE OUT IF NEEDED
         if self._interface.check_reached_target(allow_stall=True):
             goal_handle.succeed()
             result.success = True
@@ -513,7 +525,6 @@ class InterfaceNode(Node):
             msg (Empty): msg.header.frame_id with object handle (e.g. "cup", "cube"). 
                 msg.pose with object world pose.
         """
-        # TODO: HANDLE BETTER 
         # Can't import unless in isaacsim_object mode
         from robot_motion_interface.isaacsim.isaacsim_object_interface import Object
         name = msg.header.frame_id.lower()
@@ -626,7 +637,7 @@ def main(args=None):
         interface_node.start()
         # Keep this alive for non-blocking loops (panda, tesollo)
         while(True):
-            pass  # TODO: See if need to pause
+            pass 
     except (KeyboardInterrupt, ExternalShutdownException):
         pass
     finally:

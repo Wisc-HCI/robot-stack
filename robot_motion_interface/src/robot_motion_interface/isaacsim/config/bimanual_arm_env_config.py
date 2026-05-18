@@ -27,7 +27,6 @@ class BimanualArmSceneCfg(InteractiveSceneCfg):
 
     # Need to add table again so collisions happen without needing self-collision for robot
     # which causes jittery mess
-    # TODO: perhaps generate this from urdf too
     table = RigidObjectCfg(
         prim_path="{ENV_REGEX_NS}/Table",
         spawn=sim_utils.CuboidCfg(

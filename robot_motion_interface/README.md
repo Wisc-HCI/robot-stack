@@ -91,7 +91,6 @@ Next, install the python files and the Panda C++ wrappers.
 
 [OPTIONAL] If you are running the ROS examples (i.e. interface_node.py), you will also need to install ROS and setup up the ROS package.
 1. Follow [these instructions](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html) to install ROS Jazzy on Ubuntu.
-2. TODO: Other ROS dependencies (see docker)
 
 
 ## C++ Examples
@@ -107,7 +106,6 @@ For the example tesollo interface, run the following:
 
 
 ### Python Examples
-TODO: CLEAN THESE UP and add more explanation
 
 Make sure you are in the `robot_motion_interface` directory before running these.
 ```bash

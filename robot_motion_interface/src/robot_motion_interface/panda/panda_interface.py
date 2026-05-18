@@ -39,7 +39,7 @@ class PandaInterface(Interface):
         super().__init__(joint_names, home_joint_positions, base_frame, ee_frames, target_tolerance)
         self._control_mode = control_mode
         self._panda_interface_cpp = PandaInterfacePybind(hostname, urdf_path, self._joint_names, kp, kd, max_joint_delta)
-        self._rp = RobotProperties(self._joint_names, urdf_path) # TODO: get this from c++?
+        self._rp = RobotProperties(self._joint_names, urdf_path)
         self._ik_solver = MultiChainRangedIK(ik_settings_path)
     
     @classmethod

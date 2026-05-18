@@ -85,7 +85,7 @@ class IsaacsimInterface(Interface):
         self._rp = RobotProperties(self._joint_names, urdf_resolved_path)
 
         # if self._control_mode == IsaacsimControlMode.JOINT_TORQUE:
-        #     # TODO: Add joint_norm handleing
+        # 
         #     self._controller = JointTorqueController( self._rp, kp, kd, gravity_compensation=True, max_joint_delta=max_joint_delta)
         # else:
         #     raise ValueError("Control mode required.")
@@ -281,7 +281,7 @@ class IsaacsimInterface(Interface):
         """ 
         Stops the background runtime loop
         """
-        # TODO
+        return
     
     
     #####################################################################
@@ -367,7 +367,6 @@ class IsaacsimInterface(Interface):
             obs (dict): The raw observation dictionary from the environment.
         """
 
-        # TODO: Make this more abstract and make child more specific????
         x = obs["policy"][0]
 
         # This puts obs on CPU which is not ideal for speed

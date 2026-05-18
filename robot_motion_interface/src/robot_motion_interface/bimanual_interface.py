@@ -67,7 +67,6 @@ class BimanualInterface(Interface):
         self._enable_left = enable_left
         self._enable_right = enable_right
 
-        # TODO: Figure out how to not initialized 3 IK instances
         if not self._enable_left and not self._enable_right:
             raise ValueError("Must set enable_left, enable_right, or both to True.")
         if self._enable_left:
@@ -93,7 +92,7 @@ class BimanualInterface(Interface):
         super().__init__(joint_names, home_joint_positions, base_frame, ee_frames, target_tolerance)
 
         self._ik_solver = MultiChainRangedIK(ik_settings_path)
-        self._rp = RobotProperties(self._joint_names, urdf_path) # TODO: get this from child???
+        self._rp = RobotProperties(self._joint_names, urdf_path)
 
 
     @classmethod

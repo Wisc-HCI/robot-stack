@@ -22,7 +22,6 @@
 
   
   <!-- Connection Joints -->
-  <!-- TODO: Check all these measurements -->
   <joint name="$(arg name_prefix)panda_hand_joint" type="fixed">
     <parent link="$(arg name_prefix)ft_sensor_link"/>
     <child link="$(arg name_prefix)panda_hand"/>
