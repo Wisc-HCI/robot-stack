@@ -20,20 +20,20 @@ def run_blocking_targets(interface: IsaacsimInterface):
     ee = ['left_delto_offset_link', 'right_delto_offset_link']
 
     print("Starting first target.")
-    left_goal_1 = np.array([-0.2, 0.2, 0.1, 0.707, 0.707, 0, 0])
-    right_goal_1 = np.array([0.2, 0.2, 0.1, 0.707, 0.707, 0, 0])
+    left_goal_1 = np.array([-0.2, 0.2, 1.1, 0.707, 0.707, 0, 0])
+    right_goal_1 = np.array([0.2, 0.2, 1.1, 0.707, 0.707, 0, 0])
     interface.set_cartesian_pose([left_goal_1, right_goal_1], ee, blocking=True)
     print("Arrived at first target.")
     time.sleep(2)
 
-    left_goal_2 = np.array([-0.4, 0.2, 0.4, 0.707, 0.707, 0, 0])
-    right_goal_2 = np.array([0.4, 0.2, 0.4, 0.707, 0.707, 0, 0])
+    left_goal_2 = np.array([-0.4, 0.2, 1.4, 0.707, 0.707, 0, 0])
+    right_goal_2 = np.array([0.4, 0.2, 1.4, 0.707, 0.707, 0, 0])
     interface.set_cartesian_pose([left_goal_2, right_goal_2], ee, blocking=True)
     print("Arrived at second target.")
     time.sleep(2)
     
-    left_goal_3 = np.array([-0.1, 0.2, 0.4, 0.707, 0.707, 0, 0])
-    right_goal_3 = np.array([0.1, 0.2, 0.4, 0.707, 0.707, 0, 0])
+    left_goal_3 = np.array([-0.1, 0.2, 1.4, 0.707, 0.707, 0, 0])
+    right_goal_3 = np.array([0.1, 0.2, 1.4, 0.707, 0.707, 0, 0])
     interface.set_cartesian_pose([left_goal_3, right_goal_3], ee, blocking=True)
     print("Arrived at final target.")
 
@@ -53,7 +53,7 @@ def main():
 
     # Start at default position
     isaac.home()
-    
+
     print("Starting THREAD")
     targets_thread = threading.Thread(target=run_blocking_targets, args=(isaac,))
     targets_thread.start()
