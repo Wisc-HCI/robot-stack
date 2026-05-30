@@ -264,17 +264,6 @@ class Interface:
     
 
     @abstractmethod
-    def set_control_mode(self, control_mode: Enum):
-        """
-        Set the control mode.
-
-        Args:
-            control_mode (Enum): Desired mode.Exact options are implementation-specific.
-        """
-        ...
-    
-
-    @abstractmethod
     def joint_state(self) -> np.ndarray:
         """
         Get the current joint positions and velocities in order of joint_names.

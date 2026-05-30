@@ -115,17 +115,6 @@ class PandaInterface(Interface):
 
         if blocking:
             self._block_until_reached_target()
-
-
-    def set_control_mode(self, control_mode: Enum):
-        """
-        Set the control mode.
-
-        Args:
-            control_mode (Enum): Desired mode.Exact options are implementation-specific.
-        """
-        ...
-
     
 
     def joint_state(self) -> np.ndarray:

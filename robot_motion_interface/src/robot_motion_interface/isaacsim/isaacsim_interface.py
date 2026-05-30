@@ -3,6 +3,8 @@ from robot_motion_interface.isaacsim.utils.isaac_session import IsaacSession
 from robot_motion.ik.multi_chain_ranged_ik import MultiChainRangedIK
 from robot_motion_interface.utils.array_utils import partial_update
 
+from robot_motion import RobotProperties, JointTorqueController
+
 from enum import Enum
 import argparse  # IsaacLab requires using argparse
 import os
@@ -13,7 +15,6 @@ import numpy as np
 import yaml
 from pathlib import Path
 import torch
-from robot_motion import RobotProperties
 
 
 
@@ -72,23 +73,22 @@ class IsaacsimInterface(Interface):
             'rendering_mode': rendering_mode, 
         }
 
-        # self._control_mode = control_mode
+        self._control_mode = control_mode
 
         # Isaacsim Robot state
         self._cur_state = None  # Numpy Array
-        # self._joint_efforts = None  # Torch Array
-        self._joint_positions = None  # Torch Array (position targets sent to env.step)
+        self._joint_efforts = None  # Torch Array
+
         self._reset_joint_positions = None  # Torch array
         
         cur_dir = os.path.dirname(__file__)
-        urdf_resolved_path =  os.path.abspath(os.path.join(cur_dir, "..", "..", "..", urdf_path)) # TODO: TEST Removing
+        urdf_resolved_path =  os.path.abspath(os.path.join(cur_dir, "..", "..", "..", urdf_path))
         self._rp = RobotProperties(self._joint_names, urdf_resolved_path)
 
-        # if self._control_mode == IsaacsimControlMode.JOINT_TORQUE:
-        # 
-        #     self._controller = JointTorqueController( self._rp, kp, kd, gravity_compensation=True, max_joint_delta=max_joint_delta)
-        # else:
-        #     raise ValueError("Control mode required.")
+        if self._control_mode == IsaacsimControlMode.JOINT_TORQUE:
+            self._controller = JointTorqueController( self._rp, kp, kd, gravity_compensation=True, max_joint_delta=max_joint_delta)
+        else:
+            raise ValueError("Control mode required.")
         
         self._ik_solver = MultiChainRangedIK(ik_settings_path)
         self._loop_running = False
@@ -170,25 +170,12 @@ class IsaacsimInterface(Interface):
                 achieves the target. If False, returns after queuing the request.
         """
         q = self._partial_to_full_joint_positions(q, joint_names)
-        
               
-        if self._joint_positions is not None:
-            self._joint_positions[:] = torch.tensor(
-                q, dtype=self._joint_positions.dtype, device=self._joint_positions.device
-            )
+        self._controller.set_setpoint(q)
         
         if blocking:
             self._block_until_reached_target()
 
-
-    def set_control_mode(self, control_mode: Enum):
-        """
-        Set the control mode.
-
-        Args:
-            control_mode (Enum): Desired mode.Exact options are implementation-specific.
-        """
-        ...
 
 
     def joint_state(self) -> np.ndarray:
@@ -324,10 +311,7 @@ class IsaacsimInterface(Interface):
                 f"Joint name mismatch!\nExpected: {expected_names}\nGot: {joint_names}."
             )
         
-        self._joint_positions = torch.zeros_like(env.action_manager.action)
-        self._joint_positions[:] = torch.tensor(
-            self._joint_setpoint, dtype=self._joint_positions.dtype, device=self._joint_positions.device
-        )
+        self._joint_efforts = torch.zeros_like(env.action_manager.action)
 
         cfg = env.cfg
         env.sim.set_camera_view(eye=cfg.viewer.eye, target=cfg.viewer.lookat)
@@ -346,15 +330,12 @@ class IsaacsimInterface(Interface):
         # Reset robot position if flagged
         if self._reset_joint_positions is not None:
             robot = env.scene.articulations["robot"]
-            # robot.write_joint_state_to_sim(self._reset_joint_positions,
-            #     torch.zeros_like(self._reset_joint_positions))
             robot.write_joint_position_to_sim_index(position=self._reset_joint_positions, env_ids=None)
             robot.write_joint_velocity_to_sim_index(velocity=torch.zeros_like(self._reset_joint_positions), env_ids=None)
             self._reset_joint_positions = None
 
         # Set joint effort
-        # obs, _ = env.step(self._joint_efforts)
-        obs, _ = env.step(self._joint_positions)
+        obs, _ = env.step(self._joint_efforts)
         
         return obs
 
@@ -371,7 +352,12 @@ class IsaacsimInterface(Interface):
 
         # This puts obs on CPU which is not ideal for speed
         self._cur_state = (x.detach().to('cpu', dtype=torch.float64).contiguous().view(-1).numpy())
+        step_joint_efforts = self._controller.step(self._cur_state)
 
+        self._joint_efforts = torch.from_numpy(step_joint_efforts).to(
+            device=env.action_manager.action.device,
+            dtype=env.action_manager.action.dtype,
+        ).unsqueeze(0)  # [1, n] 
 
 
 if __name__ == "__main__":
